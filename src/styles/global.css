@@ -1,0 +1,1187 @@
+/** GLOBAL VARIABLES **/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Serif:wght@400;700&display=swap");
+/**-------------**/
+/** NAVBAR SECTION */
+nav {
+  background-color: #491313;
+  border-bottom: 2px solid #a72f2f;
+  z-index: 9;
+}
+nav .content {
+  padding: 0 10%;
+  gap: 30px;
+}
+nav .content .navbar-brand {
+  width: 200px;
+  min-width: 200px;
+  height: 55px;
+  padding: 0;
+}
+nav .content .navbar-brand .logo-img {
+  background: url("/src/imgs/Logo2.png") center center/contain no-repeat;
+  width: 100%;
+  height: 100%;
+}
+nav .content .navbar-toggler {
+  background-color: white;
+}
+nav .content .navbar-collapse {
+  width: 80%;
+}
+nav .content .navbar-collapse .navbar-nav {
+  gap: 50px;
+  padding: 0px 30px;
+}
+nav .content .navbar-collapse .navbar-nav .nav-link {
+  padding: 10px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 400;
+  font-size: clamp(15px, 1.3vw, 15px);
+  transition: color 0.3s ease;
+  font-family: "PT Serif", serif;
+}
+nav .content .navbar-collapse .navbar-nav .nav-link:hover {
+  color: #db4444;
+}
+@media (max-width: 991px) {
+  nav .content .navbar-collapse .navbar-nav .nav-link {
+    margin-top: 0;
+    background-color: #692a2a;
+    margin-bottom: 15px;
+  }
+  nav .content .navbar-collapse .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #a72f2f;
+  }
+}
+@media (max-width: 1200px) {
+  nav .content .navbar-collapse .navbar-nav {
+    gap: 5px;
+    padding: 0px 5%;
+  }
+}
+nav .content .contact-btn {
+  background-color: #db4444;
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  color: black;
+  padding: 6px 30px;
+  border-radius: 7px;
+  width: 10rem;
+  font-size: 16px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+nav .content .contact-btn:hover {
+  background-color: #991b1b;
+  box-shadow: none;
+}
+@media (max-width: 1600px) {
+  nav .content {
+    padding: 0 2%;
+  }
+}
+
+/**-------------**/
+/** HERO SECTION */
+.Hero-Section .carousel {
+  height: clamp(32rem, 80vh, 60rem);
+  position: relative;
+}
+.Hero-Section .carousel .hero-header {
+  width: 100%;
+  height: 100%;
+  padding: 0px 40px;
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.35);
+}
+.Hero-Section .carousel .hero-header .content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+}
+.Hero-Section .carousel .hero-header .content .headr {
+  font-size: clamp(32px, 5vw, 50px);
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+  padding: 20px 10px;
+}
+.Hero-Section .carousel .hero-header .content .sub-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(16px, 2vw, 19px);
+  font-weight: 300;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.Hero-Section .carousel .hero-header .content .CTA {
+  padding: 13px 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.Hero-Section .carousel .hero-header .content .CTA a {
+  padding: 9px 0px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.477);
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  text-decoration: none;
+  font-size: clamp(13px, 1.5vw, 16px);
+}
+.Hero-Section .carousel .hero-header .content .CTA .learnMore {
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #db4444;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.Hero-Section .carousel .hero-header .content .CTA .learnMore:hover {
+  background-color: #991b1b;
+  color: white;
+}
+.Hero-Section .carousel .hero-header .content .CTA .Order {
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 0.9;
+  background-color: rgba(231, 231, 231, 0.925);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.Hero-Section .carousel .hero-header .content .CTA .Order:hover {
+  background-color: white;
+  color: black;
+}
+.Hero-Section .carousel .carousel-indicators {
+  padding: 8px 0;
+  gap: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+}
+.Hero-Section .carousel .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(240, 240, 240, 0.6156862745);
+}
+.Hero-Section .carousel .carousel-indicators button.active {
+  opacity: 1;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.7);
+}
+.Hero-Section .carousel .carousel-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+}
+.Hero-Section .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.Hero-Section .carousel .carousel-inner .carousel-item .carousel_IMG {
+  width: 100%;
+  height: 100%;
+}
+.Hero-Section .carousel .carousel-inner .carousel-item .carousel_IMG1 {
+  background: url("/src/imgs/Hero1.png") center center/cover;
+}
+.Hero-Section .carousel .carousel-inner .carousel-item .carousel_IMG2 {
+  background: url("/src/imgs/Hero2.png") center center/cover;
+}
+.Hero-Section .carousel .carousel-inner .carousel-item .carousel_IMG3 {
+  background: url("/src/imgs/Hero3.png") center center/cover;
+}
+.Hero-Section .carousel .carousel-inner .carousel-item .carousel_IMG4 {
+  background: url("/src/imgs/Hero4.png") center center/cover;
+}
+
+/**-------------**/
+/** ABOUT US SECTION */
+.About {
+  position: relative;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+.About .backgroundColor {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  background-color: #692a2a;
+}
+.About .content {
+  position: relative;
+  z-index: 3;
+  height: 30rem;
+  padding: 40px 10%;
+}
+.About .content .img-wrapper {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.About .content .img-wrapper .img {
+  background: url("/src/imgs/About.png") center center/cover;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  border-radius: 4%;
+}
+.About .content .text-content {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.About .content .text-content .header-section {
+  font-family: "PT Serif", serif;
+}
+.About .content .text-content .header-section .title {
+  font-weight: bolder;
+  font-size: clamp(32px, 5vw, 40px);
+}
+.About .content .text-content .header-section .sub-header {
+  font-size: clamp(18px, 1.5vw, 16px);
+  font-family: "Open Sans", sans-serif;
+}
+.About .content .text-content .description {
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.85;
+  max-width: 800px;
+  line-height: 1.8;
+}
+.About .content .text-content button {
+  width: 35%;
+  min-width: 150px;
+  max-width: 250px;
+  padding: 8px 0px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.329);
+  font-weight: bold;
+  font-size: clamp(13px, 1.5vw, 16px);
+  font-family: "PT Serif", serif;
+  background-color: #db4444;
+  transition: background-color 0.3s ease;
+}
+.About .content .text-content button:hover {
+  background-color: #991b1b;
+}
+@media (max-width: 1024px) {
+  .About .backgroundColor {
+    height: 18vh;
+    width: 100%;
+  }
+  .About .content {
+    height: clamp(40rem, 60vh, 50rem);
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+  }
+  .About .content .img-wrapper {
+    width: 95%;
+    padding: 0 0;
+  }
+  .About .content .img-wrapper .img {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .About .content .text-content {
+    padding: 20px 5%;
+  }
+}
+
+/**-------------**/
+/** OBITUARIES SECTION */
+.Obituaries {
+  background-color: #e9e9e9;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.Obituaries .header-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Obituaries .header-section .header {
+  font-family: "PT Serif", serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.Obituaries .header-section p {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.9;
+  font-size: 16px;
+}
+.Obituaries .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding: 20px 20px;
+}
+.Obituaries .content .left-Arrow {
+  background: url("/src/imgs/leftArrow.png") center center/cover;
+  width: 2.25rem;
+  min-width: 40px;
+  min-height: 40px;
+  height: 2.2rem;
+  border: none;
+  border-radius: 10%;
+}
+.Obituaries .content .boxes {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 2vw;
+  gap: clamp(10px, 2vw, 20px);
+  width: 100%;
+}
+.Obituaries .content .boxes .item {
+  background-color: #491313;
+  color: white;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 clamp(200px, 43.33%, 400px);
+  display: flex;
+}
+.Obituaries .content .boxes .item .img {
+  width: 100%;
+  height: clamp(160px, 25vh, 300px);
+  min-height: 160px;
+}
+.Obituaries .content .boxes .item .img.img1 {
+  background: url("/src/imgs/Obituary1.png") top center/cover no-repeat;
+}
+.Obituaries .content .boxes .item .img.img2 {
+  background: url("/src/imgs/Obituary2.png") top center/cover no-repeat;
+}
+.Obituaries .content .boxes .item .img.img3 {
+  background: url("/src/imgs/Obituary3.png") top center/cover no-repeat;
+}
+.Obituaries .content .boxes .item .img.img4 {
+  background: url("/src/imgs/Obituary4.png") top center/cover no-repeat;
+}
+.Obituaries .content .boxes .item .text-content {
+  padding: 15px 20px 10px;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+.Obituaries .content .boxes .item .text-content .victimName {
+  font-weight: bolder;
+  font-size: clamp(18px, 2vw, 22px);
+}
+.Obituaries .content .boxes .item .text-content .deathDate {
+  opacity: 0.8;
+  font-size: clamp(12px, 1.5vw, 15px);
+  margin-bottom: 7px;
+}
+.Obituaries .content .boxes .item .text-content .description {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-size: clamp(12px, 1.3vw, 14px);
+}
+.Obituaries .content .boxes .item .readMore {
+  width: 40%;
+  max-width: 200px;
+  padding: 4px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.329);
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  font-size: clamp(12px, 1.2vw, 14px);
+  background-color: #db4444;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+.Obituaries .content .boxes .item .readMore:hover {
+  background-color: #991b1b;
+  color: white;
+}
+.Obituaries .content .right-Arrow {
+  background: url("/src/imgs/rightArrow.png") center center/cover;
+  width: 2.25rem;
+  min-width: 40px;
+  height: 2.2rem;
+  min-height: 40px;
+  border: none;
+  border-radius: 10%;
+}
+.Obituaries .CTA {
+  width: 8%;
+  margin-top: 5px;
+  padding: 7px 0px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.329);
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  min-width: 150px;
+  max-width: 250px;
+  background-color: #db4444;
+  transition: background-color 0.3s ease;
+}
+.Obituaries .CTA:hover {
+  background-color: #991b1b;
+}
+
+/**-------------**/
+/** GALLERY SECTION */
+.Gallery {
+  padding: 40px 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  max-width: 2500px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+.Gallery .image-box {
+  width: 100%;
+  padding-top: 66%;
+  position: relative;
+}
+.Gallery .img1 {
+  background: url("/src/imgs/Gallery1.png") center center/cover;
+}
+.Gallery .img1:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img2 {
+  background: url("/src/imgs/Gallery2.png") center center/cover;
+}
+.Gallery .img2:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img3 {
+  background: url("/src/imgs/Gallery3.png") center center/cover;
+}
+.Gallery .img3:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img4 {
+  background: url("/src/imgs/Gallery4.png") center center/cover;
+}
+.Gallery .img4:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img5 {
+  background: url("/src/imgs/Gallery5.png") center center/cover;
+}
+.Gallery .img5:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img6 {
+  background: url("/src/imgs/Gallery6.png") center center/cover;
+}
+.Gallery .img6:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img7 {
+  background: url("/src/imgs/Gallery7.png") center center/cover;
+}
+.Gallery .img7:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img8 {
+  background: url("/src/imgs/Gallery8.png") center center/cover;
+}
+.Gallery .img8:hover {
+  transform: translateY(-2px);
+}
+.Gallery .img9 {
+  background: url("/src/imgs/Gallery9.png") center center/cover;
+}
+.Gallery .img9:hover {
+  transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+  .Gallery {
+    padding: 40px 5%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/**-------------**/
+/** FUNERAL PLANNING SECTION **/
+.FuneralPlanning {
+  padding: 50px 10%;
+}
+.FuneralPlanning .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.FuneralPlanning .content .text-content {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+.FuneralPlanning .content .text-content .header-section {
+  font-family: "PT Serif", serif;
+}
+.FuneralPlanning .content .text-content .header-section .header {
+  font-weight: bolder;
+  font-size: clamp(30px, 5vw, 40px);
+}
+.FuneralPlanning .content .text-content .header-section .sub-title {
+  font-size: clamp(15px, 1.5vw, 16px);
+  font-family: "Open Sans", sans-serif;
+}
+.FuneralPlanning .content .text-content .description {
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.85;
+  max-width: 800px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+.FuneralPlanning .content .text-content .learnMore {
+  width: 30%;
+  margin: 15px 0;
+  max-width: 180px;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: clamp(13px, 1.5vw, 16px);
+  font-family: "PT Serif", serif;
+  background-color: #db4444;
+  transition: background-color 0.3s ease;
+}
+.FuneralPlanning .content .text-content .learnMore:hover {
+  background-color: #991b1b;
+}
+.FuneralPlanning .content .img-wrapper {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  height: clamp(20rem, 5vw + 20rem, 25rem);
+}
+.FuneralPlanning .content .img-wrapper .img {
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  background: url("/src/imgs/FuneralPlanning.png") center center/cover no-repeat;
+}
+@media (max-width: 1024px) {
+  .FuneralPlanning {
+    padding: 0px 4%;
+  }
+  .FuneralPlanning .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .FuneralPlanning .content .text-content {
+    padding-left: 3.5%;
+  }
+}
+
+/**-------------**/
+/** GRIEF & GUIDANCE SECTION */
+.GriefGuidance {
+  padding: 80px 10%;
+  background-color: #491313;
+}
+.GriefGuidance .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.GriefGuidance .content .text-content {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  color: white;
+}
+.GriefGuidance .content .text-content .header-section {
+  font-family: "PT Serif", serif;
+}
+.GriefGuidance .content .text-content .header-section .header {
+  font-weight: bolder;
+  font-size: 40px;
+  font-size: clamp(30px, 5vw, 40px);
+}
+.GriefGuidance .content .text-content .header-section .sub-title {
+  font-size: clamp(15px, 1.5vw, 16px);
+  font-family: "Open Sans", sans-serif;
+}
+.GriefGuidance .content .text-content .description {
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.85;
+  max-width: 700px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+.GriefGuidance .content .text-content .learnMore {
+  width: 30%;
+  margin: 15px 0;
+  max-width: 180px;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: clamp(14px, 1.5vw, 16px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  background-color: #db4444;
+  transition: background-color 0.3s ease;
+}
+.GriefGuidance .content .text-content .learnMore:hover {
+  background-color: #991b1b;
+}
+.GriefGuidance .content .img-wrapper {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  height: clamp(20rem, 5vw + 20rem, 25rem);
+  padding-top: 20px;
+}
+.GriefGuidance .content .img-wrapper .img {
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  background: url("/src/imgs/GriefGuidance.png") center center/cover no-repeat;
+}
+@media (max-width: 1024px) {
+  .GriefGuidance {
+    padding: 0px 4%;
+  }
+  .GriefGuidance .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .GriefGuidance .content .text-content {
+    margin-top: -20px;
+    padding-left: 3.5%;
+  }
+}
+
+/**-------------**/
+/** LOCATIONS SECTION */
+.Locations {
+  padding: 40px 5%;
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.Locations .header-section {
+  font-family: "PT Serif", serif;
+}
+.Locations .header-section .header {
+  font-weight: bolder;
+  font-size: clamp(30px, 5vw, 40px);
+}
+.Locations .header-section .sub-header {
+  font-size: clamp(15px, 1.5vw, 16px);
+  font-family: "Open Sans", sans-serif;
+}
+.Locations .content {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Locations .content .location {
+  padding: 20px 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  max-height: 200px;
+  margin: 0 auto;
+}
+.Locations .content .location .main-img {
+  background: url("/src/imgs/LocationIcon.png") center center/cover;
+  min-width: 9rem;
+  min-height: 9rem;
+}
+.Locations .content .location .text-content {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+}
+.Locations .content .location .text-content .header {
+  font-size: clamp(18px, 1.5vw, 28px);
+  font-weight: bold;
+}
+.Locations .content .location .text-content .address-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 0px 4%;
+}
+.Locations .content .location .text-content .address-section .img {
+  min-width: 40px;
+  height: 40px;
+  background: url("/src/imgs/LocationIcon.png") center center/cover;
+}
+.Locations .content .location .text-content .address-section .address {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: start;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 1.5vw, 15px);
+  line-height: 1.3;
+}
+.Locations .content .location .text-content .phone-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 4%;
+  border-radius: 10px;
+  gap: 10px;
+}
+.Locations .content .location .text-content .phone-section .img {
+  min-width: 40px;
+  height: 40px;
+  background: url("/src/imgs/PhoneIcon.png") center center/cover;
+}
+.Locations .content .location .text-content .phone-section .phone {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: start;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 1.5vw, 15px);
+}
+@media (max-width: 1024px) {
+  .Locations .content .location {
+    padding: 20px 5%;
+  }
+}
+
+/**-------------**/
+/** SERVICES SECTION */
+.Services {
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Services .header-section {
+  font-family: "PT Serif", serif;
+}
+.Services .header-section .header {
+  font-weight: bolder;
+  font-size: clamp(30px, 5vw, 40px);
+}
+.Services .header-section .sub-header {
+  font-size: clamp(15px, 1.5vw, 16px);
+  font-family: "Open Sans", sans-serif;
+}
+.Services .content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.Services .content .item {
+  background-color: green;
+  padding: 40px 2%;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 85%;
+}
+.Services .content .item .header {
+  font-family: "PT Serif", serif;
+  color: white;
+  font-weight: bold;
+  font-size: clamp(18px, 2.5vw, 25px);
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1024px) {
+  .Services .content .item .header {
+    padding-left: 20px;
+  }
+}
+.Services .content .item .arrow {
+  background: url("/src/imgs/rightArrow2.png") center center/cover;
+  width: 2.25rem;
+  height: 2.2rem;
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  border-radius: 10%;
+  transition: background-color 0.3s ease;
+}
+.Services .content .item .arrow:hover {
+  transform: translateY(-2px);
+}
+.Services .content .item.img1 {
+  background: url("/src/imgs/Services1.png") center center/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.Services .content .item.img2 {
+  background: url("/src/imgs/Services2.png") center center/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.Services .content .item.img3 {
+  background: url("/src/imgs/Services3.png") center center/cover no-repeat;
+  background-blend-mode: multiply;
+}
+.Services .content .item.img4 {
+  background: url("/src/imgs/Services4.png") center center/cover no-repeat;
+  background-blend-mode: multiply;
+}
+
+/**-------------**/
+/** TESTIMONIALS SECTION */
+.Testimonials {
+  background-color: #491313;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.Testimonials .header-section {
+  font-family: "PT Serif", serif;
+}
+.Testimonials .header-section .header {
+  font-weight: bolder;
+  font-size: clamp(30px, 5vw, 40px);
+}
+.Testimonials .header-section .sub-header {
+  font-size: clamp(15px, 1.5vw, 16px);
+  font-family: "Open Sans", sans-serif;
+}
+.Testimonials .content {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.Testimonials .content .left-Arrow {
+  background: url("/src/imgs/leftArrow2.png") center center/cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 40px;
+  border: none;
+  border-radius: 10%;
+}
+.Testimonials .content .text-content .testimonial {
+  font-size: clamp(14px, 2vw, 20px);
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.8;
+}
+.Testimonials .content .text-content .author {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+.Testimonials .content .right-Arrow {
+  background: url("/src/imgs/rightArrow2.png") center center/cover;
+  width: 2.5rem;
+  min-width: 40px;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10%;
+}
+@media (max-width: 1024px) {
+  .Testimonials .content {
+    padding: 20px 10px;
+  }
+}
+.Testimonials .indicators {
+  margin-top: 20px;
+  padding: 8px 10px;
+  gap: 15px;
+  border-radius: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.Testimonials .indicators button {
+  min-width: 0 !important;
+  height: 12px !important;
+  border-radius: 50%;
+  border: none;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(240, 240, 240, 0.6156862745);
+}
+.Testimonials .indicators button.active {
+  opacity: 1;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.7);
+}
+
+/**-------------**/
+/** CTA SECTION */
+.CTA {
+  padding: 3px 0px;
+}
+.CTA .img {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0px;
+  background: url("/src/imgs/CTA.png") center center/cover;
+}
+.CTA .img .text-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: white;
+}
+.CTA .img .text-content .header {
+  font-size: clamp(32px, 5vw, 50px);
+  font-family: "PT Serif", serif;
+  font-weight: bolder;
+  line-height: 1.5;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+.CTA .img .text-content .header .colored {
+  color: #db4444;
+}
+.CTA .img .text-content .buttons {
+  padding: 13px 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.CTA .img .text-content .buttons button,
+.CTA .img .text-content .buttons a {
+  padding: 8px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: clamp(12px, 1.5vw, 16px);
+  font-family: "PT Serif", serif;
+  text-decoration: none;
+}
+.CTA .img .text-content .buttons .learnMore {
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.477), inset 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #db4444;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.CTA .img .text-content .buttons .learnMore:hover {
+  background-color: #991b1b;
+}
+.CTA .img .text-content .buttons .Order {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.477);
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.CTA .img .text-content .buttons .Order:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+/**-------------**/
+/** FOOTER SECTION */
+footer {
+  background-color: #491313;
+}
+footer .content {
+  padding: 0px 10%;
+  gap: 10px;
+}
+footer .content .item {
+  padding: 25px 0;
+  text-align: center;
+  align-items: center;
+  color: white;
+  min-width: 250px;
+  min-height: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .content .item .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  color: white;
+}
+footer .content .item .wrapper .logo {
+  background: url("/src/imgs/Logo.png") center center/contain no-repeat;
+  width: 10rem;
+  height: 4rem;
+}
+footer .content .item .wrapper .socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+footer .content .item .wrapper .socials .facebook,
+footer .content .item .wrapper .socials .yelp,
+footer .content .item .wrapper .socials .email {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border: 5px;
+}
+footer .content .item .wrapper .socials .facebook {
+  background-image: url("/src/imgs/Facebook.png");
+}
+footer .content .item .wrapper .socials .yelp {
+  background-image: url("/src/imgs/Yelp.png");
+}
+footer .content .item .wrapper .socials .email {
+  background-image: url("/src/imgs/Email.png");
+}
+footer .content .item .wrapper p {
+  font-size: 12px;
+  color: white;
+  font-family: "PT Serif", serif;
+  margin: 0;
+  opacity: 0.9;
+}
+footer .content .item .header {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .content .item p {
+  opacity: 0.85;
+  margin-top: 2px;
+  margin-bottom: 30px;
+}
+footer .content .item .subscribe {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+footer .content .item .subscribe p {
+  font-family: "PT Serif", serif;
+  opacity: 1;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+footer .content .item .subscribe .inputBox {
+  background-color: #cfcfcf;
+  padding: 5px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+footer .content .item .subscribe .inputBox .email-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .content .item .subscribe .inputBox .email-form input {
+  padding: 2px 5px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+}
+footer .content .item .subscribe .inputBox .email-form .arrow {
+  background: url("/src/imgs/Arrow3.png") center center/cover no-repeat;
+  height: 1.2rem;
+  width: 1.4rem;
+  border: none;
+}
+footer .content .item .buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.85;
+  width: 40%;
+}
+footer .content .item .buttons button,
+footer .content .item .buttons a {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+footer .content .map {
+  padding: 10px 0;
+}
+footer .line {
+  width: 100%;
+  height: 3px;
+  background-color: #a72f2f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=global.css.map */
