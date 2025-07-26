@@ -1,0 +1,182 @@
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+/**-------------**/
+/** OBITUARIES SECTION */
+.Obituaries {
+  background-color: vars.$accentWhite;
+  padding: 60px 0px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+      font-family: vars.$header-text;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+
+    p {
+      font-family: vars.$secondary-text;
+      opacity: 0.9;
+      font-size: 16px;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+
+    padding: 20px 20px;
+
+    .left-Arrow {
+      background: url("/src/imgs/leftArrow.png") center center/cover;
+
+      width: 2.25rem;
+      min-width: 40px;
+      min-height: 40px;
+      height: 2.2rem;
+      border: none;
+      border-radius: 10%;
+    }
+
+    //Obituary section below was being a bitch. Fuck it and move on.
+    .boxes {
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+
+      padding: 2vw;
+      gap: clamp(10px, 2vw, 20px);
+      width: 100%;
+
+      .item {
+        background-color: vars.$mainColor;
+        color: white;
+
+        padding: 0;
+
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 clamp(200px, 43.33%, 400px);
+        display: flex;
+
+        .img {
+          width: 100%;
+          height: clamp(160px, 25vh, 300px);
+          min-height: 160px;
+
+          &.img1 {
+            background: url("/src/imgs/Obituary1.png") top center / cover
+              no-repeat;
+          }
+
+          &.img2 {
+            background: url("/src/imgs/Obituary2.png") top center / cover
+              no-repeat;
+          }
+
+          &.img3 {
+            background: url("/src/imgs/Obituary3.png") top center / cover
+              no-repeat;
+          }
+
+          &.img4 {
+            background: url("/src/imgs/Obituary4.png") top center / cover
+              no-repeat;
+          }
+        }
+
+        .text-content {
+          padding: 15px 20px 10px;
+          height: auto;
+          font-family: vars.$secondary-text;
+
+          .victimName {
+            font-weight: bolder;
+            font-size: clamp(18px, 2vw, 22px);
+          }
+
+          .deathDate {
+            opacity: 0.8;
+            font-size: clamp(12px, 1.5vw, 15px);
+            margin-bottom: 7px;
+          }
+
+          .description {
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            font-size: clamp(12px, 1.3vw, 14px);
+          }
+        }
+
+        .readMore {
+          width: 40%;
+          max-width: 200px;
+          padding: 4px 0;
+          border-radius: 5px;
+          border: none;
+          box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5),
+            0 5px 5px rgba(0, 0, 0, 0.329);
+
+          font-weight: bold;
+          font-family: vars.$header-text;
+          font-size: clamp(12px, 1.2vw, 14px);
+          background-color: vars.$buttonColor;
+          margin-bottom: 15px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: vars.$buttonHover;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .right-Arrow {
+      background: url("/src/imgs/rightArrow.png") center center/cover;
+
+      width: 2.25rem;
+      min-width: 40px;
+      height: 2.2rem;
+      min-height: 40px;
+      border: none;
+      border-radius: 10%;
+    }
+  }
+
+  .CTA {
+    width: 8%;
+    margin-top: 5px;
+    padding: 7px 0px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.329);
+    font-weight: bold;
+    font-family: vars.$header-text;
+    min-width: 150px;
+    max-width: 250px;
+    background-color: vars.$buttonColor;
+
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: vars.$buttonHover;
+    }
+  }
+}
