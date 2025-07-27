@@ -1,0 +1,97 @@
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+/**-------------**/
+/** NAVBAR SECTION */
+nav {
+  background-color: vars.$mainColor;
+  border-bottom: 2px solid vars.$accentColor2;
+  z-index: 9;
+
+  .content {
+    padding: 0 10%;
+    gap: 30px;
+
+    .navbar-brand {
+      width: 200px;
+      min-width: 200px;
+      height: 55px;
+      padding: 0;
+
+      .logo-img {
+        background: url("/src/imgs/Logo2.png") center center/contain no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .navbar-toggler {
+      background-color: white;
+    }
+
+    .navbar-collapse {
+      width: 80%;
+
+      .navbar-nav {
+        gap: 50px;
+        padding: 0px 30px;
+
+        .nav-link {
+          padding: 10px 10px;
+          border-radius: 20px;
+          color: white;
+          font-weight: 400;
+          font-size: clamp(15px, 1.3vw, 15px);
+          transition: color 0.3s ease;
+          font-family: vars.$header-text;
+
+          &:hover {
+            color: vars.$buttonColor;
+          }
+
+          @media (max-width: 991px) {
+            margin-top: 0;
+            background-color: vars.$accentColor;
+            margin-bottom: 15px;
+
+            &:hover {
+              color: white;
+              background-color: vars.$accentColor2;
+            }
+          }
+        }
+
+        @media (max-width: 1200px) {
+          gap: 5px;
+
+          padding: 0px 5%;
+        }
+      }
+    }
+
+    .contact-btn {
+      background-color: vars.$buttonColor;
+
+      font-weight: bold;
+      font-family: vars.$header-text;
+
+      color: black;
+      padding: 6px 30px;
+      border-radius: 7px;
+      width: 10rem;
+      font-size: 16px;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: vars.$buttonHover;
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 1600px) {
+      padding: 0 2%;
+    }
+  }
+}
