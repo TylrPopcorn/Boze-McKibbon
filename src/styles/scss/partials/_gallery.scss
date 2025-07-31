@@ -1,0 +1,90 @@
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+/**-------------**/
+/** GALLERY SECTION */
+.Gallery {
+  padding: 40px 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  max-width: 2500px;
+  margin: 0 auto;
+
+  .image-box {
+    width: 100%;
+    padding-top: 66%;
+    position: relative;
+  }
+
+  transition: background-color 0.3s ease;
+  .img1 {
+    background: url("/src/imgs/Gallery1.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img2 {
+    background: url("/src/imgs/Gallery2.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img3 {
+    background: url("/src/imgs/Gallery3.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img4 {
+    background: url("/src/imgs/Gallery4.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img5 {
+    background: url("/src/imgs/Gallery5.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img6 {
+    background: url("/src/imgs/Gallery6.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img7 {
+    background: url("/src/imgs/Gallery7.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img8 {
+    background: url("/src/imgs/Gallery8.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .img9 {
+    background: url("/src/imgs/Gallery9.png") center center/cover;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 5%;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
