@@ -1,0 +1,93 @@
+//======= VARIABLES
+@use "variables" as vars; // GLOBAL VARIABLES
+
+/**-------------**/
+/** FUNERAL PLANNING SECTION **/
+.FuneralPlanning {
+  padding: 50px 10%;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .text-content {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 40px;
+
+      .header-section {
+        font-family: vars.$header-text;
+
+        .header {
+          font-weight: bolder;
+          font-size: clamp(30px, 5vw, 40px);
+        }
+
+        .sub-title {
+          font-size: clamp(15px, 1.5vw, 16px);
+          font-family: vars.$secondary-text;
+        }
+      }
+
+      .description {
+        font-size: clamp(15px, 1.8vw, 18px);
+        font-family: vars.$secondary-text;
+        opacity: 0.85;
+        max-width: 800px;
+        line-height: 1.8;
+        margin: 20px 0;
+      }
+
+      .learnMore {
+        width: 30%;
+        margin: 15px 0;
+        max-width: 180px;
+        padding: 10px 0;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+        font-weight: bold;
+        font-size: clamp(13px, 1.5vw, 16px);
+        font-family: vars.$header-text;
+        background-color: vars.$buttonColor;
+
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: vars.$buttonHover;
+        }
+      }
+    }
+
+    .img-wrapper {
+      flex: 1 1 400px;
+      display: flex;
+      justify-content: center;
+      height: clamp(20rem, 5vw + 20rem, 25rem);
+
+      .img {
+        width: 100%;
+        height: 95%;
+
+        border-radius: 10px;
+        background: url("/src/imgs/FuneralPlanning.png") center center / cover
+          no-repeat;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0px 4%;
+
+    .content {
+      flex-direction: column;
+      gap: 10px;
+
+      .text-content {
+        padding-left: 3.5%;
+      }
+    }
+  }
+}
