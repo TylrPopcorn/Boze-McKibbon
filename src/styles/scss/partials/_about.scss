@@ -1,0 +1,126 @@
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+/**-------------**/
+/** ABOUT US SECTION */
+.About {
+  position: relative;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.25);
+
+  .backgroundColor {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    background-color: vars.$accentColor;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+
+    height: 30rem;
+    padding: 40px 10%;
+
+    .img-wrapper {
+      height: 100%;
+      width: 80%;
+
+      display: flex;
+      justify-content: center;
+
+      .img {
+        background: url("/src/imgs/About.png") center center/cover;
+        width: 100%;
+        height: 100%;
+
+        margin-left: 10px;
+
+        border-radius: 4%;
+      }
+    }
+
+    .text-content {
+      padding: 10px 10px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      .header-section {
+        font-family: vars.$header-text;
+
+        .title {
+          font-weight: bolder;
+          font-size: clamp(32px, 5vw, 40px);
+        }
+
+        .sub-header {
+          font-size: clamp(18px, 1.5vw, 16px);
+          font-family: vars.$secondary-text;
+        }
+      }
+
+      .description {
+        font-size: clamp(15px, 1.8vw, 18px);
+
+        font-family: vars.$secondary-text;
+        opacity: 0.85;
+
+        max-width: 800px;
+        line-height: 1.8;
+      }
+
+      button {
+        width: 35%;
+        min-width: 150px;
+        max-width: 250px;
+
+        padding: 8px 0px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.329);
+        font-weight: bold;
+        font-size: clamp(13px, 1.5vw, 16px);
+        font-family: vars.$header-text;
+
+        background-color: vars.$buttonColor;
+
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: vars.$buttonHover;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .backgroundColor {
+      height: clamp(15vh, 18vh, 20vh);
+
+      width: 100%;
+    }
+
+    .content {
+      height: clamp(40rem, 60vh, 50rem);
+
+      flex-direction: column;
+      padding: 20px 20px;
+      gap: 20px;
+
+      .img-wrapper {
+        width: 95%;
+        padding: 0 0;
+
+        .img {
+          margin-left: 0px;
+          width: 100%;
+        }
+      }
+
+      .text-content {
+        padding: 20px 5%;
+      }
+    }
+  }
+}
