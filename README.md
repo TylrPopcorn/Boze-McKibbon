@@ -8,6 +8,10 @@ Live:
 <sup>Credit goes to the original/external sources used.</sup>
 
 
+<br></br>
+## **ORIGINAL DESIGN:**:
+<img width="1328" height="901" alt="image" src="https://github.com/user-attachments/assets/40315233-f47a-4136-ba2c-5acc1db5a16c" />
+
 ## Project Setup
 - [ ] clone this repository.
 - [ ] type `npm i` to download dependencies.
@@ -15,10 +19,19 @@ Live:
 
 ----
 
-<b>Extra Resources:
-- Figma: https://www.figma.com/
-- Documentation: https://ejs.co/
-</b>
+# Deployment:
+- Render - https://render.com/
+
+# Design:
+- Figma - https://www.figma.com/
+ 
+# Build:
+- JavaScript - https://www.javascript.com/
+- React.js - https://react.dev/
+- CSS - https://web.dev/css
+- SCSS - https://sass-lang.com/
+- BootStrap - https://getbootstrap.com/
+
 
 # Related Projects
 - [Market Street Barbers](https://github.com/TylrPopcorn/Market-Street-Barbers) - _Book yourself a haircut online with Market Street Barbers._
