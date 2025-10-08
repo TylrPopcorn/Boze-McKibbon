@@ -9,7 +9,7 @@ Live:
 
 
 <br></br>
-## **ORIGINAL DESIGN:**:
+## **ORIGINAL DESIGN:**
 <img width="1328" height="901" alt="image" src="https://github.com/user-attachments/assets/40315233-f47a-4136-ba2c-5acc1db5a16c" />
 
 ## Project Setup
@@ -34,7 +34,7 @@ Live:
 
 
 # Related Projects
-- [Market Street Barbers](https://github.com/TylrPopcorn/Market-Street-Barbers) - _Book yourself a haircut online with Market Street Barbers._
-- [Hero Page 1](https://github.com/TylrPopcorn/Hero-Page-1) - _Creating simple hero pages with BootStrap & HTML_
-- [Stop Watch](https://github.com/TylrPopcorn/Stop-Watch) - *Use a virtual stop watch with Svelte.js*
+- [Berger and Associates](https://github.com/TylrPopcorn/Berger-and-Associates) - _Website redesign using Figma & EJS._
+- [Television Show Search](https://github.com/TylrPopcorn/Television-Show-Search) - _A simple project showcasing how to manipulate an API in Svelte.js_
+- [Pokemon Display Grid](https://github.com/TylrPopcorn/Pokemon-Display-Grid) - *A simple application showcasing Pokémon using DOM manipulation*
 - [Projects List](https://github.com/TylrPopcorn/Projects-List) - _Explore other projects I have worked on_
