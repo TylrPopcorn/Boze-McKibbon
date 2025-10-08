@@ -2,7 +2,7 @@
 A complete website redesign built with React.js, JavaScript, HTML, CSS, and SCSS—focused on modern design, responsive layouts, and improved user experience. The project highlights clean front-end architecture and attention to accessibility and performance.
 <br></br>
 
-Live: 
+Live: https://boze-mckibbon.onrender.com/
 
 <img src="https://github.com/user-attachments/assets/e7645caa-e257-4d9f-8b14-f46d56920b31" />
 <sup>Credit goes to the original/external sources used.</sup>
